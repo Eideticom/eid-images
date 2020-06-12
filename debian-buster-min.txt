@@ -1,0 +1,3 @@
+Hand crafted boutique VM image based on debian buster.
+
+root password is 123456
