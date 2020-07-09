@@ -1,10 +1,10 @@
 # eid-images
 Prebuilt Docker and VM Images
 
-## How to Produce the eid-packer-focal-base qcow2 Image File
+## How to Produce the eid-packer-focal qcow2 Image File
 
 To produce the eid-packer-ubuntu-focal-base.qcow2 image, use the following method:
-### Use eid-ansible -> packer to create the base qcow2 image.
+### Use eid-ansible -> packer to create the qcow2 image.
 
 git clone https://eideticcom.visualstudio.com/DefaultCollection/Tools/_git/eid-ansible
 
@@ -12,13 +12,13 @@ Go through the README.md on the packer page called *Eideticom Packer Project* fo
 
 https://eideticcom.visualstudio.com/Tools/_git/eid-ansible?path=%2Fpacker&anchor=eideticom-packer-project
 
-The packer sub-project that you require here is called *eid-packer-ubuntu-focal-base*.
+The packer sub-project that you require here is called *eid-packer-ubuntu-focal*.
 
 #to build the VM image
 - cd ~/eid-ansible/packer/
-- packer build eid-packer-ubuntu-focal-base.json
+- packer build eid-packer-ubuntu-focal.json
 
-This will produce a directory called *eid-packer-ubuntu-focal-base*. Inside of that directory will be the eid-packer-ubuntu-focal-base.qcow2 file.
+This will produce a directory called *eid-packer-ubuntu-focal*. Inside of that directory will be the eid-packer-ubuntu-focal.qcow2 file.
 This is the final uncompressed state of this qcow2 image. To reduce the size of the qcow2 file down, see the section *Reduce the qcow2 image size* below.
 
 ## How to Produce the eid-packer-focal-nlfs-kern qcow2 Image File
